@@ -1,0 +1,24 @@
+<!--The 'step_code' value from the .js file should be used-->
+<!--
+   <li id="login-step" data-bind="fadeVisible: isVisible">
+   id is step code
+   -->
+<li id="login-step" data-bind="fadeVisible: isVisible">
+    <div class="step-title" data-bind="i18n: stepTitle" data-role="title"></div>
+    <div id="checkout-step-title"
+         class="step-content"
+         data-role="content">
+        <h3>
+            <span data-bind="text: getGameTitle()"></span> : <a href="javascript:void(0)" style="color: red" data-bind="text: getLuckyNumber() "></a>
+        </h3>
+        <form data-bind="submit: navigateToNextStep" novalidate="novalidate">
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <button data-role="opc-continue" type="submit" class="button action continue primary">
+                        <span><!-- ko i18n: 'Next'--><!-- /ko --></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</li>

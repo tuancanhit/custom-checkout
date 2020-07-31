@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Api\GuestShippingInformationManagementInterface">
+        <plugin name="save_shipping_note_to_quote"
+                type="SM\Checkout\Plugin\Magento\Checkout\Api\GuestShippingInformationManagementInterface"/>
+    </type>
+</config>
